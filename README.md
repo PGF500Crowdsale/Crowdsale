@@ -6,7 +6,7 @@ This repository contains the contracts for the [ico.pgf500.com][PGF500] token sa
 
 ## Contracts
 
-Please see the [contracts/](contracts) directory.
+Please see the [Crowdsale/](Crowdsale) directory.
 
 ## Development environment
 
@@ -37,7 +37,7 @@ truffle test
 
 Token contract:
 
-- The token contract mints a total supply of 60.000.000 ICH ERC20 tokens and disburses them to the address specified upon creation.
+- The token contract mints a total supply of 284,000,000 PGF7T ERC20 tokens and disburses them to the address specified upon creation.
 - The tokens are born non-transferable and can be made transferable later by the contract owner.
 - Some owner-defined addresses *can* transfer the tokens even while they are locked. The sale and reservation contracts need to do that.
 - The owner is automatically whitelisted. Transfering ownership also adds the new owner to the whitelist (and removes the former owner from it).
@@ -52,7 +52,7 @@ Sale contract:
 - Has a whitelist of addresses that can contribute. Some whitelisted addresses can have a custom rate set so that they can receive bonus tokens. The owner can add and remove whitelisted addresses (either single addresses or batches) and set a specific custom rate for each one (which, if set, will override the default rate of the period that is current at the time of payment for that specific contributing address; this allows reservation contracts with fixed - possibly discounted - rates).
 - Accepts ethers and distributes tokens immediately according to the current rate determined for the sender.
 - Rejects transactions under 0.05 ethers.
-- Accepts transactions lower than or equal to 5 ethers even from non-whitelisted senders.
+- Accepts transactions lower than or equal to 20 ethers even from non-whitelisted senders.
 - Is deployed in two (or possibly more) instances, one for the presale and one for the sale.
 - The owner can close the sale ahead of time and withdraw unsold tokens (which can then be burned through the token contract).
 - Doesn't have a hard cap: the sale stops at the end of the last period, or when all allowed tokens have been sold, or when the owner stops it.
