@@ -192,7 +192,7 @@ contract PGF500Sale is Pausable {
   event TokensPurchased(address indexed _purchaser, uint256 _value, uint256 _amount);
 
   uint256 constant public MINIMUM_AMOUNT = 0.05 ether;
-  uint256 constant public MAXIMUM_NON_WHITELIST_AMOUNT = 15 ether;
+  uint256 constant public MAXIMUM_NON_WHITELIST_AMOUNT = 20 ether;
 
   /**
    * @dev Constructor, takes initial parameters.
