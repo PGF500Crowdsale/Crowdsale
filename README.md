@@ -6,7 +6,7 @@ This repository contains the contracts for the [ico.pgf500.com][PGF500] token sa
 
 ## Contracts
 
-Please see the [Crowdsale/](Crowdsale) directory.
+Please see the [/](Crowdsale) directory.
 
 ## Development environment
 
