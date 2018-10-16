@@ -1,12 +1,12 @@
 # PGF500 Crowdsale and Token contracts
 
-This repository contains the contracts for the [ico.pgf500.com][PGF500] token sales.
+This repository contains the contracts for the PGF500 token sales.
 
 ![PGF500logo](pgf500logo.png)
 
 ## Contracts
 
-Please see the [/](Crowdsale) directory.
+Please see the Crowdsale directory.
 
 ## Development environment
 
